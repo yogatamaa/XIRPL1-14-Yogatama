@@ -26,11 +26,14 @@ Route::get('/gallery', function () {
 });
 
 Route::get('/', function () {
-    return view ('Home');
+    return view('home', [
+        "title" => "Home"
+    ]);
 });
 
 Route::get('/about', function () {
-    return  view ('About', [
+    return  view ('about', [
+        "title" => "About",
         "nama" => "Fadhil Fauzi Yogatama",
         "email" => "yogatama105@gmail.com",
         "gambar" => "olo.jpg"
@@ -38,6 +41,8 @@ Route::get('/about', function () {
 });
 
 Route::get('/gallery', function () {
-    return  view ('Gallery');
+    return view('gallery', [
+        "title" => "Gallery"
+    ]);
 });
 
