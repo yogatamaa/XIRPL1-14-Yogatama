@@ -14,17 +14,6 @@ use App\Http\Controllers\ContactController;
 |
 */
 
-Route::get('/', function () {
-    return ('Halaman home');
-});
-
-Route::get('/about', function () {
-    return ('Halaman About');
-});
-
-Route::get('/gallery', function () {
-    return ('Halaman Gallery');
-});
 
 Route::get('/', function () {
     return view('home', [
